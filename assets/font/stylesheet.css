@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'B Elham';
+    src: url('BElham.woff2') format('woff2'),
+        url('BElham.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
