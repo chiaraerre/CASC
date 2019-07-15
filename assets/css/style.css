@@ -6,33 +6,22 @@ html, body {
 body {
 	font-family: poppins;
 }
-#home {
-	background:#FAB74C;
-}
 
-#servizi {
-	background:#FAB74C;
-}
+#home {background:#FAB74C;}
+#servizi {background:#FAB74C;}
+#accoglienza {background:#e9454e;	color: white;}
+#integrazione {background:#2dbbd3; color: white;}
 
-#accoglienza {
-	background:#e9454e;
-	color: white;
-}
-
-#integrazione {
-	background:#2dbbd3;
-	color: white;
-}
-
-#slides{
-  background-color: #E9454E !important;
-}
 
 .carousel{
   background-color: #E9454E !important;
+  animation:0.5s
+
 }
-.carousel .item{
-  background-color: #E9454E;
+
+.carousel:hover {
+  background: #c62c3b !important;
+  animation:0.5s
 }
 
 .circle {
@@ -47,33 +36,55 @@ body {
 	font-size: 20px;
 }
 
-#cell18  {
+.cell18  {
   font-size: 17px;
 }
 
-#cell30  {
+.cell30  {
   font-size: 30px;
 }
 
-#cell15  {
+.cell15  {
   font-size: 15px;
+}
+
+.paddingResponsive {
+   padding-top: 75px;
+}
+
+@media only screen and (min-width: 601px) {
+  .illuproprio {
+    margin: 40px -15px -50px -15px
+  }
 }
 
 @media only screen and (max-width: 600px) {
 
-  #ciaooo {
+  a.navbar.brand {
+    width: 60%;
+  }
+
+  div#burger {
+    width: 30%;
+  }
+
+  .paddingResponsive {
+     padding-top: 110px !important;
+  }
+
+  .ciaooo {
     margin: 6vmin;
   }
 
-  #cell18 {
+  .cell18 {
     font-size: 15px
   }
 
-  #cell30 {
+  .cell30 {
     font-size: 20px
   }
 
-  #cell15 {
+  .cell15 {
     font-size: 13px
   }
 
@@ -93,3 +104,101 @@ body {
 		padding: 0px 12px !important;
 		width: 100%;
   }
+
+  table th {
+    width: 100% !important;
+  }
+
+  table td {
+    width: 100% !important;
+  }
+
+  #burger {
+    width:100%
+  }
+
+}
+
+.buttonHome:hover {
+  background: #00a1b7 !important;
+  animation:0.5s
+}
+
+.count-title {color:white; font-size: 70px; font-weight: black;  text-align: center; }
+.count-text {color:white; text-align: center; }
+
+*:hover {
+  text-decoration: none !important;
+}
+
+.clickable:hover {
+  opacity: 0.6;
+}
+
+table th {
+  width: 20%;
+}
+
+table td {
+  width: 20%;
+}
+
+
+@font-face {
+  font-family: BElham;
+  src: url(../font/BElham.woff);
+}
+
+.loader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(225, 225, 225, .97);
+  z-index: 999 !important;
+}
+.loader .spinner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+.loader i {
+  color: #fff;
+}
+.loader img {
+  width: 85px;
+  height: auto;
+  -webkit-animation:spin 1.5s infinite;
+  -moz-animation:spin 1.5s infinite;
+  animation:spin 1.5s infinite;
+}
+
+.loaderHome {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background:#fcfcff;
+  z-index: 999 !important;
+}
+.loaderHome .spinnerHome {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+.loaderHome i {
+  color: #fff;
+}
+.loaderHome img {
+  width: 85px;
+  height: auto;
+}
+
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
